@@ -1,0 +1,4 @@
+config/vertex-key.json
+.env
+node_modules/
+dist/
