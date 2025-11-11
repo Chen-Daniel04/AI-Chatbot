@@ -2,3 +2,9 @@ vertexai-backend-key.json
 .env
 node_modules/
 dist/
+.eslintignore
+eslint.config.js
+testFaq.js
+testFaqQuery.js
+collectionTest.js
+.hintrc

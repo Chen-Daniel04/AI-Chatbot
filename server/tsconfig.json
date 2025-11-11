@@ -44,6 +44,6 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
   },
-  "include": ["./**/*.ts"],
+  "include": ["./**/*.ts", "testFaq.js", "testFaqQuery.js"],
   "exclude": ["node_modules", "dist"]
 }

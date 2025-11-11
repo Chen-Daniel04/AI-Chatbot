@@ -1,5 +1,6 @@
 import { VertexAI } from '@google-cloud/vertexai';
 import dotenv from 'dotenv';
+import { getRelevantFAQs } from './faqService.js';
 
 dotenv.config();
 
@@ -29,7 +30,7 @@ export async function generateResponse(prompt: string): Promise<string> {
     });
 
     // Extract the plain text from the model response
-    const responseText = result.response.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    const responseText = result.response.candidates?.[0]?.content?.parts?.[0]?.text || 'No response generated.';
 
     console.log('Gemini (Vertex AI) Response:', responseText);
     return responseText;
